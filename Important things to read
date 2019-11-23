@@ -14,4 +14,7 @@ Framework, how to read config file, logging module -> how to start logging
 pipenv, venv
 sorting algorithms
 binary search
+adding data to database
+PEP-8 guidelines
+Decorator
 
