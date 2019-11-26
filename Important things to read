@@ -22,3 +22,6 @@ pytest syntax --> parameterization,
 Exception handling
 AWK command to get the logs
 see how logging is implemented in pytest
+PYTHONPATH
+SYS/OS
+string commands
