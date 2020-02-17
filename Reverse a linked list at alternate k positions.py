@@ -56,11 +56,9 @@ class LinkedList:
 
     def del_specifi_key_node(self, key):
         temp = self.head
-        prev_node = None
-        next_node = None
         if temp.data == key and temp == self.head:
             self.del_head_node()
-            return
+            return None
         while temp:
             prev_node = temp
             if temp.next is None and temp.data == key:

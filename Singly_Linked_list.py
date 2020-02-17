@@ -73,9 +73,26 @@ class LinkedList:
                     break
                 temp = temp.next
 
+    # def reverse_linked_list(self):
+    #     prev = None
+    #     current = self.head
+    #     while current is not None:
+    #         next = current.next
+    #         current.next = prev
+    #         prev = current
+    #         current = next
+    #     self.head = prev
+
+    def print_nodes(self):
+        temp = self.head
+        while temp:
+            print(temp.data)
+            temp = temp.next
+
+
     def reverse_linked_list(self):
-        prev = None
         current = self.head
+        prev = None
         while current is not None:
             next = current.next
             current.next = prev
@@ -83,11 +100,36 @@ class LinkedList:
             current = next
         self.head = prev
 
-    def print_nodes(self):
-        temp = self.head
-        while temp:
-            print(temp.data)
-            temp = temp.next
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 llist = LinkedList()
 llist.push_at_front(1)
@@ -98,7 +140,7 @@ llist.insert_after_key(2,7)
 llist.insert_at_last(10)
 #llist.del_head_node()
 #llist.del_last_node()
-llist.del_specifi_key_node(10)
+#llist.del_specifi_key_node(10)
 llist.reverse_linked_list()
 llist.print_nodes()
 
