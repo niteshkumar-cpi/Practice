@@ -162,7 +162,7 @@ def nextSquare():
 
 # Driver code to test above generator
 # function
-print(next(nextSquare()))
-print(next(nextSquare()))
-print(next(nextSquare()))
-print(next(nextSquare()))
+for num in nextSquare():
+    if num > 100:
+         break
+    print(num)

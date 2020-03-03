@@ -20,7 +20,6 @@
 
 
 import inspect
-from abc import ABCMeta, abstractmethod
 class Garbage:
 
 
@@ -40,13 +39,20 @@ class Garbage:
 #     def method2(self):
 #         return NotImplementedError
 
+class BCD:
+    def __init__(self):
+        pass
+    def test(self):
+        return 10
 
-class ABC(Garbage):
+
+class ABC(BCD, Garbage):
 
 
     def __init__(self):
         self.data = "13"
         self.var2 = "1234"
+        BCD.__init__(self)
         Garbage.__init__(self)
 
     def meth(self):
@@ -54,7 +60,13 @@ class ABC(Garbage):
 
 
 obj = ABC()
-obj.meth()
-print(obj.asdfds())
+#obj.meth()
+print("**********", obj.test())
+
+# def abc(a):
+#     print(a)
+#
+# a = 10
+# abc(a or 2)
 
 
